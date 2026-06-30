@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    font-weight: 100;
+    font-style: normal;
+}
+body{
+    background-color: black;
+}
+.body{
+    background-color: #1F1F1F;
+    border: 2px solid rgba(144, 143, 143, 0.553);
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 500px;
+    /* width: 400px; */
+    width: 30%;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px white;
+}
+img{
+    border-radius: 50%;
+    width: 90px;
+}
+.word{
+    margin: 30px;
+   
+}
+.name{
+    color: white;
+    font-weight: bold;
+}
+.city{
+   color:#b3bc50;
+    margin: 10px;
+     font-weight: bold;
+}
+.work{
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+}
+.link a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid  rgba(144, 143, 143, 0.553);  
+    display: flex;
+    flex-direction: column;                                                                                                                             
+    gap: 16px;
+    width: 300px;
+    font-weight: bold;
+    margin: 20px;
+    margin-left: 75px;
+    background-color: rgba(144, 143, 143, 0.553);
+    border-radius: 10px;
+    height: 30px;
+    transition: .3s ease;
+  
+   
+}
+.link a:hover
+{
+transform: scale(1.05);
+}
+.icon i {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 30px;
+    margin:10px ; 
+     color: white; 
+}
+.icon i:hover{
+    color:  rgba(144, 143, 143, 0.553);
+}
