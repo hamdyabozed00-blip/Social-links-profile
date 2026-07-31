@@ -1,86 +1,100 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "poppins";
-    font-weight: 100;
-    font-style: normal;
+    font-family: 'Inter', sans-serif;
 }
+
 body {
-    background-color: black;
+    background-color: #141414;
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-content: center;
     align-items: center;
-    margin:0;
 }
-.card{
-    background-color: #1F1F1F;
-    border: 2px solid rgba(144, 143, 143, 0.553);
+
+/* الكارت الرئيسي */
+.card {
+    background-color: #1f1f1f;
+    width: 380px;
+    padding: 35px 30px;
+    border-radius: 12px;
     text-align: center;
-    height: 600px;
-    border-radius: 20px;
-    box-shadow: 8px 8px 8px white;
-    max-width:380px;
-    width:90%;
-    padding:30px 20px ;
 }
-img{
+
+/* صورة الملف الشخصي */
+.img img {
+    width: 88px;
+    height: 88px;
     border-radius: 50%;
-    width: 90px;
-    height: 90px;
-    object-fit:cover;
+    object-fit: cover;
 }
-.word{
-    margin: 30px;
-   
+
+/* النصوص والمعلومات */
+.word {
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
-.name{
-    color: white;
-    font-weight: bold;  
-    margin-top: 15px;
+
+.name {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 6px;
 }
-.city{
-    color:#b3bc50;
-    margin: 8px 0;
-    font-weight: bold;
+
+.city {
+    color: #c5f82a; /* اللون الأخضر الفسفوري المطابق لـ Frontend Mentor */
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 22px;
 }
-.work{
-    margin-top: 30px;
-    color: white;
-    font-weight: bold;
+
+.work {
+    color: #ffffff;
+    font-size: 14px;
+    opacity: 0.8;
 }
-.link a{
-    text-decoration: none;
-    color: white;
-    border: 2px solid  rgba(144, 143, 143, 0.553);  
+
+/* أزرار الروابط */
+.link {
     display: flex;
-    flex-direction: column;                                                                                                                             
-    gap: 16px;
-    width: 300px;
-    font-weight: bold;
-    margin: 20px;
-    margin: 0 auto;
-    background-color: rgba(144, 143, 143, 0.553);
-    border-radius: 10px;
-    height: 30px;
-    transition: .3s ease;
-    width: 100% ;
-    padding: 12px;
-   
+    flex-direction: column;
+    gap: 14px;
 }
-.link a:hover
-{
-transform: scale(1.05);
-}
-.icon i {
+
+.link a {
     text-decoration: none;
-    padding: 10px;
-    font-size: 30px;
-    margin:10px ; 
-     color: white; 
+    color: #ffffff;
+    background-color: #333333;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
-.icon i:hover{
-    color:  rgba(144, 143, 143, 0.553);
+
+.link a:hover {
+    background-color: #c5f82a;
+    color: #141414;
+}
+
+/* أيقونات السوشيال ميديا في الأسفل */
+.icon {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon a {
+    color: #ffffff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.icon a:hover {
+    color: #c5f82a;
 }
