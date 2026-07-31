@@ -15,7 +15,7 @@ body {
     align-items: center;
     margin:0;
 }
-.body{
+.card{
     background-color: #1F1F1F;
     border: 2px solid rgba(144, 143, 143, 0.553);
     text-align: center;
