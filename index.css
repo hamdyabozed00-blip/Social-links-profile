@@ -7,6 +7,7 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* خلفية الصفحة نفسها */
 body {
     background-color: #141414;
     min-height: 100vh;
@@ -15,65 +16,75 @@ body {
     align-items: center;
 }
 
-/* الكارت الرئيسي */
-.card {
-    background-color: #1f1f1f;
-    width: 380px;
-    padding: 35px 30px;
-    border-radius: 12px;
-    text-align: center;
+/* الكارت الرمادي الداكن - دا اللي كان مخفي عندك */
+.card, .body {
+    background-color: #1f1f1f !important;
+    width: 380px !important;
+    max-width: 90% !important;
+    padding: 40px 30px !important;
+    border-radius: 12px !important;
+    text-align: center !important;
+    margin: 0 auto !important; /* يلغي أي margin-left أو top قديم */
+    box-shadow: none !important;
+    border: none !important;
 }
 
-/* صورة الملف الشخصي */
-.img img {
+/* صورة الشخص */
+.img img, img {
     width: 88px;
     height: 88px;
     border-radius: 50%;
     object-fit: cover;
+    margin-bottom: 20px;
 }
 
-/* النصوص والمعلومات */
+/* النصوص */
 .word {
-    margin-top: 20px;
     margin-bottom: 25px;
 }
 
 .name {
     color: #ffffff;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     margin-bottom: 6px;
 }
 
 .city {
-    color: #c5f82a; /* اللون الأخضر الفسفوري المطابق لـ Frontend Mentor */
+    color: #c5f82a; /* الأخضر الفسفوري الأصلي */
     font-size: 14px;
     font-weight: 700;
-    margin-bottom: 22px;
+    margin-bottom: 20px;
 }
 
 .work {
     color: #ffffff;
     font-size: 14px;
+    font-weight: 400;
     opacity: 0.8;
 }
 
-/* أزرار الروابط */
+/* قائمة الروابط والأزرار */
 .link {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 16px;
+    width: 100%;
 }
 
 .link a {
     text-decoration: none;
     color: #ffffff;
-    background-color: #333333;
-    padding: 12px;
+    background-color: #333333; /* لون الزراير الرمادي */
+    display: block;
+    width: 100%;
+    padding: 14px 0;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 700;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 !important; /* بيمسح الـ margin-left: 75px القديم */
+    border: none !important;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .link a:hover {
@@ -81,20 +92,22 @@ body {
     color: #141414;
 }
 
-/* أيقونات السوشيال ميديا في الأسفل */
+/* الأيقونات تحت */
 .icon {
-    margin-top: 20px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 18px;
 }
 
-.icon a {
+.icon a, .icon i {
     color: #ffffff;
-    font-size: 18px;
-    transition: color 0.3s ease;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-.icon a:hover {
+.icon a:hover i {
     color: #c5f82a;
 }
